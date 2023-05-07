@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Content from './Content';
 import reportWebVitals from './reportWebVitals';
+import {StoreProvider} from './store'
 //Fake comments
 // function emitComment(id){
 //   setInterval(() => {
@@ -20,9 +22,11 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <StoreProvider>
+      <App />
+      <Content />
+    </StoreProvider>
   </React.StrictMode>
-
 );
 
 // If you want to start measuring performance in your app, pass a function
