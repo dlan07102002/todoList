@@ -1,0 +1,28 @@
+* {
+    box-sizing: inherit;
+}
+
+html {
+    /* HACK */
+    font-size: 62.5%;
+    /* 1rem = 12px */
+    line-height: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    /* sans-serif la chung chu khong co chan */
+    /* dong css tren nghia la, trong cai luc
+    roboto loi hoac chua tai duoc thi no se lay
+    sans-serif tren may ta de hien thi cho toi khi
+    roboto hien thi  */
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    margin-top: -16px;
+    position: relative;
+    z-index: -2;
+}
+
+#root{
+    position: relative;
+    z-index: -2;
+}

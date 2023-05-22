@@ -1,0 +1,29 @@
+.heading h1{
+    color: #b6c3d1;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.heading{
+    height: 35%;
+}
+.dateList{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: space-evenly;
+    font-size: 1.4rem;
+    color: #4f555d;
+    border-bottom: 1px solid #656c74;
+    padding-bottom: 5px;
+    font-weight: 400;
+}
+.dateItem{
+
+}
+.dateItem:hover{
+    cursor: pointer;
+    color: #aeb4bc;
+    font-weight: 600;
+}

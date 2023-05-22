@@ -1,0 +1,25 @@
+.background {
+    position: relative;
+    right: 0;
+    left: 0;
+    z-index: -1
+}
+.backgroundStart{
+    background-color: #f06292;
+    height: 34vh;
+    position: relative;
+}
+.backgroundMiddle{
+    border-style: solid;
+    border-color: #f06292 #e55c8a #e55c8a  #f06292;
+    border-width: 16vh 50vw;
+    height: 33vh;
+    position: relative;
+    top: -1px
+}
+.backgroundEnd{
+    background-color: #e55c8a;
+    height: 33vh;
+    position: relative;
+    top: -2px;
+}

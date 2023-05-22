@@ -1,33 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import Content from './Content';
-import reportWebVitals from './reportWebVitals';
-import {StoreProvider} from './store'
-//Fake comments
-// function emitComment(id){
-//   setInterval(() => {
-//     window.dispatchEvent(
-//       new CustomEvent(`lesson-${id}`, { 
-//         detail: `Nội dung cmt của lesson ${id}`
-//       })
-//     )
-//   }, 2000)
-// }
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-// emitComment(1)
-// emitComment(2)
-// emitComment(3)
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import "./index.css";
+import App from "./App";
+import BackGround from "./components/BackGround";
+import reportWebVitals from "./reportWebVitals";
+import { StoreProvider } from "./store";
+import GlobalStyles from "./components/GlobalStyles";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <StoreProvider>
-      <App />
-      <Content />
-    </StoreProvider>
-  </React.StrictMode>
-);
+  <>
+    <GlobalStyles>
+      <StoreProvider>
+        <BackGround> 
+          <App />
+        </BackGround>
+      </StoreProvider>
+    </GlobalStyles>
+  </>
+)
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

@@ -1,4 +1,4 @@
-import {SET_JOB, ADD_JOB, REMOVE_JOB, UPDATE_JOB} from './constants'
+import {SET_JOB, ADD_JOB, REMOVE_JOB, UPDATE_JOB, COMPLETE_JOB} from './constants'
 export const setJob = payload => {
     return {
         type: SET_JOB,
@@ -23,6 +23,13 @@ export const updateJob = (payload,index) => {
     return {
         type: UPDATE_JOB,
         payload,
+        id: index
+    }
+}
+export const completeJob = (payload, index) => {
+    return {
+        type: COMPLETE_JOB,
+        payload, 
         id: index
     }
 }

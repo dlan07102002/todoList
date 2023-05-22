@@ -1,0 +1,50 @@
+.container{
+    position: absolute;   
+    width: 50vw;
+    height: 75vh;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 2;
+    background-color: #3c424a;
+}
+.appContainer{
+    margin: 20px
+}
+.todoInput{
+    width: 80%;
+}
+.list{
+    list-style: none;
+}
+.todoItem{
+    
+}
+.todoInput{
+    
+}
+.todoOptionContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.todoItemInfo{
+    color: #f5f6f6;
+    display: flex;
+    margin: auto;
+    margin-left: 0;
+    
+}
+.todoItemInfo span{
+    margin-left: 10px;
+}
+.todoOptionsList{
+    
+}
+.todoOptionItem{
+    /* display: none; */
+}
+.todoOptionList:hover .todoOptionItem{
+    display: block
+}
